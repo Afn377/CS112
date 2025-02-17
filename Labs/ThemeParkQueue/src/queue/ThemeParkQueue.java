@@ -50,6 +50,20 @@ public class ThemeParkQueue {
      */
     public void enqueue(String toAdd) {
         // WRITE YOUR CODE HERE
+        if(frontOfLine == null){
+            frontOfLine = new Rider();
+            frontOfLine.name = toAdd;
+            endOfLine = frontOfLine;
+            lineLength++;
+            return;
+        } else {
+            Rider newRider = new Rider();
+            newRider.name = toAdd;
+            endOfLine.next = newRider;
+            endOfLine = newRider;
+            lineLength++;
+        }
+        
 
     }
 
@@ -70,6 +84,12 @@ public class ThemeParkQueue {
      */
     public String dequeue() {
         // WRITE YOUR CODE HERE
+        if(frontOfLine != null){
+            Rider temp = frontOfLine;
+            frontOfLine = frontOfLine.next;
+            lineLength--;
+            return temp.name;
+        }
 
         return null; // Remove this line, it is provided so the code compiles
     }
