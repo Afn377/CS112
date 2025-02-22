@@ -1,0 +1,18 @@
+This file is NOT meant to be read by your program. Instead, you can use 
+this to replicate autolab test cases, using JUnit or the Debugger to fix bugs.
+
+THESE ARE THE FIRST TWO TEST CASES AUTOLAB WILL USE (for tests 1a, 1b, 2a, and 2b): 
+
+input1.txt:
+    insertAt("item1",1) 
+    insertAt("item2",2)
+    insertAt("item3",3)
+    insertAt("item4",2)
+    insertAt("item5",4)
+
+input2.txt:
+    insertAt("item1",1) 
+    insertAt("item2",0)
+    insertAt("item3",5)
+    insertAt("item4",1)
+    insertAt("item5",3)
