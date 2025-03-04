@@ -34,7 +34,12 @@ public class BSTDictionary {
      */
     private void preOrderHelper(WordNode curr, ArrayList<WordNode> list) {
         // WRITE YOUR CODE HERE
-
+        if(curr == null) {
+            return;
+        }
+        list.add(curr);
+        preOrderHelper(curr.getLeft(), list);
+        preOrderHelper(curr.getRight(), list);
     }
 
     /**
@@ -65,7 +70,12 @@ public class BSTDictionary {
      */
     private void postOrderHelper(WordNode curr, ArrayList<WordNode> list) {
         // WRITE YOUR CODE HERE
-
+        if(curr == null) {
+            return;
+        }
+        postOrderHelper(curr.getLeft(), list);
+        postOrderHelper(curr.getRight(), list);
+        list.add(curr);
     }
 
     /**
@@ -95,7 +105,12 @@ public class BSTDictionary {
      */
     private void inOrderHelper(WordNode curr, ArrayList<WordNode> list) {
         // WRITE YOUR CODE HERE
-
+        if(curr == null) {
+            return;
+        }
+        inOrderHelper(curr.getLeft(), list);
+        list.add(curr);
+        inOrderHelper(curr.getRight(), list);
     }
 
     /**
@@ -116,8 +131,24 @@ public class BSTDictionary {
      */
     public ArrayList<WordNode> levelOrder() {
         // WRITE YOUR CODE HERE
-
-        return null; // Replace this line, it's provided so the code compiles
+        ArrayList<WordNode> list = new ArrayList<>();
+        Queue<WordNode> queue = new Queue<>();
+        if (root == null) {
+            return list;
+        }
+        queue.enqueue(root);
+        while (!queue.isEmpty()) {
+            WordNode curr = queue.dequeue();
+            list.add(curr);
+            if (curr.getLeft() != null) {
+                queue.enqueue(curr.getLeft());
+            }
+            if (curr.getRight() != null) {
+                queue.enqueue(curr.getRight());
+            }
+        }
+        return list;
+        
     }
 
     /**
