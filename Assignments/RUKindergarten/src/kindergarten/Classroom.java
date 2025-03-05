@@ -148,6 +148,23 @@ public class Classroom {
      */
     public void insertMusicalChairs() {
         // WRITE YOUR CODE HERE
+        for(int i = 0; i < studentsInSeats.length; i++){
+            for(int j = 0; j < studentsInSeats[i].length; j++){
+                if(studentsInSeats[i][j] != null){
+                    SNode student = new SNode();
+                    student.setStudent(studentsInSeats[i][j]);
+                    if(musicalChairs == null){
+                        musicalChairs = student;
+                        musicalChairs.setNext(musicalChairs);
+                    } else {
+                        SNode temp = musicalChairs.getNext();
+                        musicalChairs.setNext(student);
+                        student.setNext(temp);
+                        musicalChairs = student;
+                    }
+                }
+            }
+        }
 
     }
 
