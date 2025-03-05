@@ -162,6 +162,7 @@ public class Classroom {
                         student.setNext(temp);
                         musicalChairs = student;
                     }
+                    studentsInSeats[i][j] = null;
                 }
             }
         }
@@ -189,6 +190,22 @@ public class Classroom {
      */
     public void moveStudentFromChairsToLine(int size) {
         // WRITE YOUR CODE HERE
+        if(musicalChairs == null || size == 0)
+            return;
+        else if(size == 1){
+            musicalChairs = null;
+        }
+        
+        int n = StdRandom.uniform(size);
+        StdOut.println(n);
+        SNode ptr = musicalChairs;
+
+        for(int i = 0; i < n; i++){
+            ptr = ptr.getNext();
+        }
+        insertByName(ptr.getNext().getNext().getStudent());
+        ptr.setNext(ptr.getNext().getNext().getNext());
+        printMusicalChairs();
 
     }
 
@@ -204,6 +221,36 @@ public class Classroom {
      */
     public void insertByName(Student eliminatedStudent) {
         // WRITE YOUR CODE HERE
+        SNode student = new SNode();
+        student.setStudent(eliminatedStudent);
+        if(studentsInLine == null){
+            studentsInLine = student;
+            return;
+        } else if(studentsInLine.getNext() == null){
+            if(studentsInLine.getStudent().compareNameTo(eliminatedStudent) > 0){
+                studentsInLine.setNext(student);
+                return;
+            } else{
+                SNode temp = studentsInLine;
+                studentsInLine = student;
+                student.setNext(temp);
+                return;
+            }
+        }
+
+        SNode ptr = studentsInLine;
+
+        do{
+            if(ptr.getNext().getStudent().compareNameTo(eliminatedStudent) > 0 ){
+                SNode temp = ptr.getNext();
+                ptr.setNext(student);
+                student.setNext(temp);
+                return;
+            }
+            ptr = ptr.getNext();
+        } while(ptr.getNext() != null);
+        ptr.setNext(student);
+        return;
     }
 
     /**
@@ -222,6 +269,16 @@ public class Classroom {
      */
     public void eliminateLosingStudents() {
         // WRITE YOUR CODE HERE
+        SNode ptr = musicalChairs;
+        int size = 0;
+        do{
+            size++; 
+            ptr = ptr.getNext();
+        } while(ptr != musicalChairs);
+        for(int i = size; i >= 0; i--){
+            moveStudentFromChairsToLine(i);
+            StdOut.println(i);
+        }
 
     }
 
