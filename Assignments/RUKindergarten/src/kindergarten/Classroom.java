@@ -62,6 +62,19 @@ public class Classroom {
      */
     public void enterClassroom(String filename) {
         // WRITE YOUR CODE HERE
+        StdIn.setFile(filename);
+        int lines = StdIn.readInt();
+        for (int i = 0; i < lines; i++) {
+            String firstName = StdIn.readString();
+            String lastName = StdIn.readString();
+            int age = StdIn.readInt();
+            Student student = new Student(firstName, lastName, age);
+            SNode newNode = new SNode();
+            newNode.setStudent(student);
+            newNode.setNext(studentsInLine);
+            studentsInLine = newNode;
+        }
+            
     }
 
     /**
@@ -87,7 +100,16 @@ public class Classroom {
      */
     public void createSeats(String openSeatsFile) {
         // WRITE YOUR CODE HERE
-
+        StdIn.setFile(openSeatsFile);
+        int rows = StdIn.readInt();
+        int cols = StdIn.readInt();
+        openSeats = new boolean[rows][cols];
+        studentsInSeats = new Student[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                openSeats[i][j] = StdIn.readBoolean();
+            }
+        }
     }
 
     /**
@@ -107,6 +129,14 @@ public class Classroom {
      */
     public void seatStudents() {
         // WRITE YOUR CODE HERE
+        for(int i = 0; i < openSeats.length; i++){
+                for(int j = 0; j < openSeats[i].length; j++){
+                    if(openSeats[i][j] == true && studentsInLine != null){
+                        studentsInSeats[i][j] = studentsInLine.getStudent();
+                        studentsInLine = studentsInLine.getNext();
+                    }
+                }
+        }
 
     }
 
