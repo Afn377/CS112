@@ -190,23 +190,21 @@ public class Classroom {
      */
     public void moveStudentFromChairsToLine(int size) {
         // WRITE YOUR CODE HERE
-        if(musicalChairs == null || size == 0)
-            return;
-        else if(size == 1){
-            musicalChairs = null;
-        }
-        
-        int n = StdRandom.uniform(size);
-        StdOut.println(n);
+        int random = StdRandom.uniform(size);
         SNode ptr = musicalChairs;
-
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < random; i++){
             ptr = ptr.getNext();
         }
-        insertByName(ptr.getNext().getNext().getStudent());
-        ptr.setNext(ptr.getNext().getNext().getNext());
+        
+        if(ptr.getNext() == musicalChairs){
+            musicalChairs = ptr;
+            musicalChairs.setNext(musicalChairs.getNext().getNext());
+        }else{
+            ptr.setNext(ptr.getNext().getNext());
+        }
+        insertByName(ptr.getNext().getStudent());        
+        StdOut.println("Position of Student Removed: " + (random+1));
         printMusicalChairs();
-
     }
 
     /**
@@ -221,36 +219,21 @@ public class Classroom {
      */
     public void insertByName(Student eliminatedStudent) {
         // WRITE YOUR CODE HERE
-        SNode student = new SNode();
-        student.setStudent(eliminatedStudent);
+        SNode newNode = new SNode();
+        newNode.setStudent(eliminatedStudent);
         if(studentsInLine == null){
-            studentsInLine = student;
-            return;
-        } else if(studentsInLine.getNext() == null){
-            if(studentsInLine.getStudent().compareNameTo(eliminatedStudent) > 0){
-                studentsInLine.setNext(student);
-                return;
-            } else{
-                SNode temp = studentsInLine;
-                studentsInLine = student;
-                student.setNext(temp);
-                return;
+            studentsInLine = newNode;
+        } else if(studentsInLine.getStudent().compareNameTo(eliminatedStudent) > 0){
+            newNode.setNext(studentsInLine);
+            studentsInLine = newNode;
+        } else {
+            SNode ptr = studentsInLine;
+            while(ptr.getNext() != null && ptr.getNext().getStudent().compareNameTo(eliminatedStudent) < 0){
+                ptr = ptr.getNext();
             }
+            newNode.setNext(ptr.getNext());
+            ptr.setNext(newNode);
         }
-
-        SNode ptr = studentsInLine;
-
-        do{
-            if(ptr.getNext().getStudent().compareNameTo(eliminatedStudent) > 0 ){
-                SNode temp = ptr.getNext();
-                ptr.setNext(student);
-                student.setNext(temp);
-                return;
-            }
-            ptr = ptr.getNext();
-        } while(ptr.getNext() != null);
-        ptr.setNext(student);
-        return;
     }
 
     /**
@@ -270,14 +253,15 @@ public class Classroom {
     public void eliminateLosingStudents() {
         // WRITE YOUR CODE HERE
         SNode ptr = musicalChairs;
-        int size = 0;
-        do{
-            size++; 
+        int size = 1;
+        while(ptr.getNext() != musicalChairs){
+            size++;
             ptr = ptr.getNext();
-        } while(ptr != musicalChairs);
-        for(int i = size; i >= 0; i--){
-            moveStudentFromChairsToLine(i);
-            StdOut.println(i);
+        }
+        while(size > 1){
+            StdOut.println(size);
+            moveStudentFromChairsToLine(size);
+            size--;
         }
 
     }
