@@ -131,7 +131,7 @@ public class Classroom {
         // WRITE YOUR CODE HERE
         for(int i = 0; i < openSeats.length; i++){
                 for(int j = 0; j < openSeats[i].length; j++){
-                    if(openSeats[i][j] == true && studentsInLine != null){
+                    if(openSeats[i][j] == true && studentsInSeats[i][j] == null && studentsInLine != null){
                         studentsInSeats[i][j] = studentsInLine.getStudent();
                         studentsInLine = studentsInLine.getNext();
                     }
@@ -195,7 +195,6 @@ public class Classroom {
         for(int i = 0; i < random; i++){
             ptr = ptr.getNext();
         }
-        
         if(ptr.getNext() == musicalChairs){
             insertByName(ptr.getNext().getStudent());
             musicalChairs = ptr;
@@ -204,9 +203,6 @@ public class Classroom {
             insertByName(ptr.getNext().getStudent());
             ptr.setNext(ptr.getNext().getNext());
         }
-        StdOut.println("Position of Student Removed: " + (random+1));
-        printMusicalChairs();
-        printStudentsInLine();
     }
 
     /**
@@ -260,9 +256,7 @@ public class Classroom {
             size++;
             ptr = ptr.getNext();
         }
-        printMusicalChairs();
         while(size > 1){
-            StdOut.println(size);
             moveStudentFromChairsToLine(size);
             size--;
         }
