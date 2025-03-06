@@ -197,14 +197,16 @@ public class Classroom {
         }
         
         if(ptr.getNext() == musicalChairs){
+            insertByName(ptr.getNext().getStudent());
             musicalChairs = ptr;
             musicalChairs.setNext(musicalChairs.getNext().getNext());
         }else{
+            insertByName(ptr.getNext().getStudent());
             ptr.setNext(ptr.getNext().getNext());
         }
-        insertByName(ptr.getNext().getStudent());        
         StdOut.println("Position of Student Removed: " + (random+1));
         printMusicalChairs();
+        printStudentsInLine();
     }
 
     /**
@@ -258,6 +260,7 @@ public class Classroom {
             size++;
             ptr = ptr.getNext();
         }
+        printMusicalChairs();
         while(size > 1){
             StdOut.println(size);
             moveStudentFromChairsToLine(size);
@@ -280,7 +283,17 @@ public class Classroom {
      */
     public void seatMusicalChairsWinner() {
         // WRITE YOUR CODE HERE
-
+        if(musicalChairs != null && musicalChairs.getNext() == musicalChairs){
+            for(int i = 0; i < studentsInSeats.length; i++){
+                for(int j = 0; j < studentsInSeats[i].length; j++){
+                    if(openSeats[i][j] == true && studentsInSeats[i][j] == null){
+                        studentsInSeats[i][j] = musicalChairs.getStudent();
+                        musicalChairs = null;
+                        return;
+                    }
+                }
+            }
+        }
     }
 
     /**
