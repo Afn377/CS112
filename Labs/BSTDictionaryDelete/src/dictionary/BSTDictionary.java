@@ -47,8 +47,29 @@ public class BSTDictionary {
      */
     private WordNode removeWordHelper(WordNode curr, String word) {
         // WRITE YOUR CODE HERE
-        
-        return null; // Replace this line, it is provided so your code compiles.
+        if(curr == null) {
+            return null;
+        } else if (word.compareTo(curr.getWord()) < 0) {
+            curr.setLeft(removeWordHelper(curr.getLeft(), word));
+        } else if (word.compareTo(curr.getWord()) > 0) {
+            curr.setRight(removeWordHelper(curr.getRight(), word));
+        } else {
+            if (curr.getLeft() == null && curr.getRight() == null) {
+                return null;
+            } else if (curr.getLeft() == null) {
+                return curr.getRight();
+            } else if (curr.getRight() == null) {
+                return curr.getLeft();
+            } else {
+                WordNode min = findMin(curr.getRight());
+                WordNode temp = new WordNode(min.getWord(), min.getDefinition());
+                curr.setRight(removeWordHelper(curr.getRight(), temp.getWord()));
+                temp.setLeft(curr.getLeft());
+                temp.setRight(curr.getRight());
+                return temp;
+            }
+        }
+        return curr;
     }
 
     /**
