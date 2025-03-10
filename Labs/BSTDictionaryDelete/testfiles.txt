@@ -1,0 +1,53 @@
+The following are the testcases autolab will use with your program. 
+Your program will NOT read from this file. Instead, you can use this information
+to hardcode tests in JUnit, or debug using the driver if you are failing any autolab test.
+
+You should replicate the following operations to reproduce any test case:
+
+
+input1.txt:
+    addWord("J","K")
+    addWord("E" "F")
+    addWord("H", "I")
+    addWord("G", "H")
+    addWord("D", "E")
+    addWord("F", "G")
+    addWord("B", "C")
+
+Test 1a:
+    Create an Empty tree
+    Insert all from input1.txt
+    Then removeWord("B")
+Test 1b:
+    Create an Empty tree
+    Insert all from input1.txt
+    Then removeWord("G")
+
+
+
+input2.txt:
+    addWord("5","4")
+    addWord("2" "1")
+    addWord("9", "8")
+    addWord("10", "9")
+    addWord("7", "6")
+    addWord("4", "3")
+    addWord("1", "0")
+    addWord("0", "-1")
+    addWord("3", "2")
+
+Test 2a:
+    Create an Empty tree
+    Insert all from input2.txt
+    Then removeWord("5")
+Test 2b:
+    Create an Empty tree
+    Insert all from input2.txt
+    Then removeWord("10")
+Test 2c:
+    Create an Empty tree
+    Insert all from input2.txt
+    Then removeWord("9")
+ 
+
+input3.txt is similar to the above two files, and should be covered by the given testcases.
