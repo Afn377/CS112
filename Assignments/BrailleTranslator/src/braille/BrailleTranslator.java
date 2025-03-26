@@ -112,8 +112,19 @@ The last digit of the encoding represents the position (left or right) of the ch
      */
     public TreeNode getSymbolNode(String encoding) {
         // WRITE YOUR CODE HERE
-
-        return null; // Replace this line, it is provided so your code compiles
+        TreeNode currentNode = treeRoot;
+        for (int i = 0; i < encoding.length(); i++) {
+            char direction = encoding.charAt(i);
+            if (direction == 'L') {
+                currentNode = currentNode.getLeft();
+            } else if (direction == 'R') {
+                currentNode = currentNode.getRight();
+            }
+            if (currentNode == null) {
+                return null;
+            }
+        }
+        return currentNode;
     }
 
     /**
@@ -125,8 +136,27 @@ The last digit of the encoding represents the position (left or right) of the ch
      */
     public String findBrailleEncoding(char character) {
         // WRITE YOUR CODE HERE
+        if(treeRoot == null)
+            return null;
+        else
+            return findBrailleEncodingHelper(treeRoot, character);
+             
 
-        return null; // Replace this line, it is provided so your code compiles
+
+    }
+
+    private String findBrailleEncodingHelper(TreeNode node, char character) {
+        if(node == null)
+            return null;
+        if(node.getSymbol().getCharacter() == character)
+            return node.getSymbol().getEncoding();
+        String left = findBrailleEncodingHelper(node.getLeft(), character);
+        String right = findBrailleEncodingHelper(node.getRight(), character);
+        if(left != null)
+            return left;
+        if(right != null)
+            return right;
+        return null;
     }
 
     /**
