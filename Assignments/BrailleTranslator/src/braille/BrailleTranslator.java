@@ -200,8 +200,18 @@ The last digit of the encoding represents the position (left or right) of the ch
      */
     public String translateBraille(String input) {
         // WRITE YOUR CODE HERE
+        StdIn.setFile(input);
+        String result = "";
+        while(!StdIn.isEmpty()){
+            String encoding = "";
+            for(int i = 0; i < 6; i++){
+                encoding += StdIn.readChar();
+            }
+            TreeNode node = getSymbolNode(encoding);
+            result += node.getSymbol().getCharacter();
+        }
 
-        return null; // Replace this line, it is provided so your code compiles
+        return result; // Replace this line, it is provided so your code compiles
     }
 
 
