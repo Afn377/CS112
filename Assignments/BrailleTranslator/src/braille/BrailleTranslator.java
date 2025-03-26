@@ -168,8 +168,25 @@ The last digit of the encoding represents the position (left or right) of the ch
      */
     public ArrayList<Symbol> encodingsStartWith(String start) {
         // WRITE YOUR CODE HERE
+        TreeNode startNode = getSymbolNode(start);
+        if (startNode == null) {
+            return new ArrayList<Symbol>();
+        }
 
-        return null; // Replace this line, it is provided so your code compiles
+        ArrayList<Symbol> symbols = new ArrayList<Symbol>();
+        encodingsStartWithHelper(startNode, symbols);
+        return symbols;
+
+    }
+    
+    private ArrayList<Symbol> encodingsStartWithHelper(TreeNode currentNode, ArrayList<Symbol> symbols){
+        if(currentNode == null)
+            return symbols;
+        if(currentNode.getSymbol() != null && currentNode.getSymbol().hasCharacter())
+            symbols.add(currentNode.getSymbol());
+        encodingsStartWithHelper(currentNode.getLeft(), symbols);
+        encodingsStartWithHelper(currentNode.getRight(), symbols);
+        return symbols;
     }
 
     /**
