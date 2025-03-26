@@ -223,8 +223,21 @@ The last digit of the encoding represents the position (left or right) of the ch
      */
     public void deleteSymbol(char symbol) {
         // WRITE YOUR CODE HERE
- 
+        if(treeRoot == null)
+            return;
+        String encoding = findBrailleEncoding(symbol);
+        TreeNode node = getSymbolNode(encoding);
+        while(encoding.length() > 1 && node.getLeft()==null && node.getRight() == null){
+            char direction = encoding.charAt(encoding.length() - 1);
+            encoding = encoding.substring(0, encoding.length() - 1);
+            node = getSymbolNode(encoding);
+            if(direction == 'L')
+                node.setLeft(null);
+            else
+                node.setRight(null);
+        }
     }
+
 
     public TreeNode getTreeRoot() {
         return this.treeRoot;
