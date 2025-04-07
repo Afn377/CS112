@@ -45,20 +45,17 @@ public class MinecraftSC {
         Item newItem = new Item(itemName, recipe, null);
         Item curr = table[indexToInsert];
         Item prev = null;
-        // check if the item already exists
+
         while (curr != null) {
             if (curr.getName().equals(itemName)) {
-                return; // item already exists, do nothing
+                return;
             }
             prev = curr;
             curr = curr.getNext();
         }
-        // if we reach here, the item does not exist, so we can insert it
         if (prev == null) {
-            // insert at the head of the list
             table[indexToInsert] = newItem;
         } else {
-            // insert at the end of the list
             prev.setNext(newItem);
         }
 
@@ -68,12 +65,23 @@ public class MinecraftSC {
      * Given an item name, remove it from the hash table if it exists.
      * @param itemName the item name to search for
      */
-    /*Use the provided hash function to find the index you should search for, given the item name. 
-That gives you the corresponding index at which you should search: afterward, identify the item and then delete it if you found the item.
-Recall the different cases for deletion: deleting from the front, middle, and end as well as the only node in the list. table[i] refers to the front of a linked list of nodes.  */
-    public void delete(String itemName) {
+       public void delete(String itemName) {
         // WRITE YOUR CODE HERE
-        
+        int indexToDelete = hash(itemName);
+        Item curr = table[indexToDelete];
+        Item prev = null;
+        while (curr != null) {
+            if (curr.getName().equals(itemName)) {
+                if (prev == null) {
+                    table[indexToDelete] = curr.getNext();
+                } else {
+                    prev.setNext(curr.getNext());
+                }
+                return;
+            }
+            prev = curr;
+            curr = curr.getNext();
+        }
     }
 
     /**
