@@ -38,35 +38,28 @@ public class MinecraftSC {
      * @param resultingCount how many items this recipe can generate
      */
 
-     /*
-      * Place the recipe array and resulting item count into a Recipe object using the Recipe constructor.
-USE hash(itemName) to find the index you should insert at. (remember, it uses the first letter which differs from class. “Apple” goes to index 0, “Beacon” index 1). 
-At that index, add an Item containing the recipe object and item name to the END of the linked list at that index ONLY IF that item doesn’t exist in the list – if you’re attempting to insert a duplicate, do nothing. 
-      */
     public void put(String itemName, String[][] recipeItems, int resultingCount) {
         // WRITE YOUR CODE HERE
-        Recipe recipe = new Recipe();
-        recipe.setItems(recipeItems);
-        recipe.setResultingCount(resultingCount);
-        Item item = new Item(itemName, recipe, null);
+        Recipe recipe = new Recipe(recipeItems, resultingCount);
         int indexToInsert = hash(itemName);
+        Item newItem = new Item(itemName, recipe, null);
         Item curr = table[indexToInsert];
+        Item prev = null;
         // check if the item already exists
         while (curr != null) {
             if (curr.getName().equals(itemName)) {
                 return; // item already exists, do nothing
             }
+            prev = curr;
             curr = curr.getNext();
         }
-        // insert the item at the end of the list
-        if (table[indexToInsert] == null) {
-            table[indexToInsert] = item;
+        // if we reach here, the item does not exist, so we can insert it
+        if (prev == null) {
+            // insert at the head of the list
+            table[indexToInsert] = newItem;
         } else {
-            curr = table[indexToInsert];
-            while (curr.getNext() != null) {
-                curr = curr.getNext();
-            }
-            curr.setNext(item);
+            // insert at the end of the list
+            prev.setNext(newItem);
         }
 
     }
@@ -75,6 +68,9 @@ At that index, add an Item containing the recipe object and item name to the END
      * Given an item name, remove it from the hash table if it exists.
      * @param itemName the item name to search for
      */
+    /*Use the provided hash function to find the index you should search for, given the item name. 
+That gives you the corresponding index at which you should search: afterward, identify the item and then delete it if you found the item.
+Recall the different cases for deletion: deleting from the front, middle, and end as well as the only node in the list. table[i] refers to the front of a linked list of nodes.  */
     public void delete(String itemName) {
         // WRITE YOUR CODE HERE
         
