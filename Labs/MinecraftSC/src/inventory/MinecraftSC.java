@@ -41,23 +41,21 @@ public class MinecraftSC {
     public void put(String itemName, String[][] recipeItems, int resultingCount) {
         // WRITE YOUR CODE HERE
         Recipe recipe = new Recipe(recipeItems, resultingCount);
-        int indexToInsert = hash(itemName);
-        Item newItem = new Item(itemName, recipe, null);
-        Item curr = table[indexToInsert];
+        int i = hash(itemName);
+        Item item = new Item(itemName, recipe, null);
+        Item ptr = table[i];
         Item prev = null;
 
-        while (curr != null) {
-            if (curr.getName().equals(itemName)) {
+        while (ptr != null) {
+            if (ptr.getName().equals(itemName)) 
                 return;
-            }
-            prev = curr;
-            curr = curr.getNext();
+            prev = ptr;
+            ptr = ptr.getNext();
         }
-        if (prev == null) {
-            table[indexToInsert] = newItem;
-        } else {
-            prev.setNext(newItem);
-        }
+        if (prev == null) 
+            table[i] = item;
+        else 
+            prev.setNext(item);
 
     }
 
@@ -67,20 +65,19 @@ public class MinecraftSC {
      */
        public void delete(String itemName) {
         // WRITE YOUR CODE HERE
-        int indexToDelete = hash(itemName);
-        Item curr = table[indexToDelete];
+        int i = hash(itemName);
+        Item ptr = table[i];
         Item prev = null;
-        while (curr != null) {
-            if (curr.getName().equals(itemName)) {
-                if (prev == null) {
-                    table[indexToDelete] = curr.getNext();
-                } else {
-                    prev.setNext(curr.getNext());
-                }
+        while (ptr != null) {
+            if (ptr.getName().equals(itemName)) {
+                if (prev == null) 
+                    table[i] = ptr.getNext();
+                else 
+                    prev.setNext(ptr.getNext());
                 return;
             }
-            prev = curr;
-            curr = curr.getNext();
+            prev = ptr;
+            ptr = ptr.getNext();
         }
     }
 
