@@ -1,0 +1,1105 @@
+167
+1 Activator Rail
+9
+0 0 Iron Ingot
+0 1 Stick
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Redstone Torch
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Stick
+2 2 Iron Ingot
+1 Anvil
+7
+0 0 Iron Block
+0 1 Iron Block
+0 2 Iron Block
+1 1 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Arrow
+3
+0 1 Flint
+1 1 Stick
+2 1 Feather
+1 Beacon
+9
+0 0 Glass
+0 1 Glass
+0 2 Glass
+1 0 Glass
+1 1 Nether Star
+1 2 Glass
+2 0 Obsidian
+2 1 Obsidian
+2 2 Obsidian
+1 Bed
+6
+1 0 White Wool
+1 1 White Wool
+1 2 White Wool
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+4 Birch Wood Plank
+1
+1 1 Birch Wood
+1 Blaze Powder
+1
+2 1 Blaze Rod
+1 Boat
+5
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Bone Meal
+1
+2 1 Bone
+1 Book
+4
+1 0 Paper
+1 1 Paper
+2 0 Paper
+2 1 Leather
+1 Book and Quill
+3
+1 0 Feather
+2 0 Ink Sac
+2 1 Book
+1 Bookshelf
+9
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Book
+1 1 Book
+1 2 Book
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Bow
+6
+0 1 Stick
+0 2 String
+1 0 Stick
+1 2 String
+2 1 Stick
+2 2 String
+1 Bowl
+3
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Bread
+3
+2 0 Wheat
+2 1 Wheat
+2 2 Wheat
+1 Brewing Stand
+4
+1 1 Blaze Rod
+2 0 Cobblestone
+2 1 Cobblestone
+2 2 Cobblestone
+1 Bricks
+4
+1 0 Brick
+1 1 Brick
+2 0 Brick
+2 1 Brick
+1 Bucket
+3
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 1 Iron Ingot
+1 Button
+1
+1 1 Oak Wood Plank
+1 Cake
+9
+0 0 Milk Bucket
+0 1 Milk Bucket
+0 2 Milk Bucket
+1 0 Sugar
+1 1 Egg
+1 2 Sugar
+2 0 Wheat
+2 1 Wheat
+2 2 Wheat
+1 Carrot on a Stick
+2
+1 0 Fishing Rod
+2 1 Carrot
+1 Cauldron
+7
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Chest
+8
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Chiseled Quartz Block
+2
+1 1 Quartz Slab
+2 1 Quartz Slab
+1 Chiseled Sandstone
+2
+1 1 Sandstone Slab
+2 1 Sandstone Slab
+1 Clock
+5
+0 1 Gold Ingot
+1 0 Gold Ingot
+1 1 Redstone
+1 2 Gold Ingot
+2 1 Gold Ingot
+6 Cobblestone Wall
+6
+1 0 Cobblestone
+1 1 Cobblestone
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Cobblestone
+2 2 Cobblestone
+1 Compass
+5
+0 1 Iron Ingot
+1 0 Iron Ingot
+1 1 Redstone
+1 2 Iron Ingot
+2 1 Iron Ingot
+1 Cookie
+3
+2 0 Wheat
+2 1 Cocoa Beans
+2 2 Wheat
+1 Crafting Table
+4
+1 0 Oak Wood Plank
+1 1 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Cyan Dye
+2
+2 0 Lapis Lazuli
+2 1 Cactus Green
+1 Dandelion Yellow
+1
+2 1 Dandelion
+1 Daylight Sensor
+9
+0 0 Glass
+0 1 Glass
+0 2 Glass
+1 0 Nether Quartz
+1 1 Nether Quartz
+1 2 Nether Quartz
+2 0 Wooden Slab
+2 1 Wooden Slab
+2 2 Wooden Slab
+1 Detector Rail
+8
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Stone Pressure Plate
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Redstone
+2 2 Iron Ingot
+1 Diamond Axe
+5
+0 0 Diamond
+0 1 Diamond
+1 0 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Block
+9
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 1 Diamond
+2 2 Diamond
+1 Diamond Boots
+4
+1 0 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Chestplate
+8
+0 0 Diamond
+0 2 Diamond
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 1 Diamond
+2 2 Diamond
+1 Diamond Helmet
+5
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Hoe
+4
+0 0 Diamond
+0 1 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Leggings
+7
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 0 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Pickaxe
+5
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Shovel
+3
+0 1 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Sword
+3
+0 1 Diamond
+1 1 Diamond
+2 1 Stick
+1 Dispenser
+9
+0 0 Cobblestone
+0 1 Cobblestone
+0 2 Cobblestone
+1 0 Cobblestone
+1 1 Bow
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Redstone
+2 2 Cobblestone
+1 Emerald Block
+9
+0 0 Emerald
+0 1 Emerald
+0 2 Emerald
+1 0 Emerald
+1 1 Emerald
+1 2 Emerald
+2 0 Emerald
+2 1 Emerald
+2 2 Emerald
+1 Ender Chest
+9
+0 0 Obsidian
+0 1 Obsidian
+0 2 Obsidian
+1 0 Obsidian
+1 1 Eye of Ender
+1 2 Obsidian
+2 0 Obsidian
+2 1 Obsidian
+2 2 Obsidian
+1 Eye of Ender
+2
+1 1 Ender Pearl
+2 1 Blaze Powder
+2 Fence
+6
+1 0 Stick
+1 1 Stick
+1 2 Stick
+2 0 Stick
+2 1 Stick
+2 2 Stick
+1 Fence Gate
+6
+1 0 Stick
+1 1 Oak Wood Plank
+1 2 Stick
+2 0 Stick
+2 1 Oak Wood Plank
+2 2 Stick
+1 Fermented Spider Eye
+3
+1 0 Spider Eye
+1 1 Brown Mushroom
+2 1 Sugar
+1 Fire Charge
+3
+1 0 Blaze Powder
+1 1 Coal
+2 1 Gunpowder
+1 Fishing Rod
+5
+0 2 Stick
+1 1 Stick
+1 2 String
+2 0 Stick
+2 2 String
+1 Flint and Steel
+2
+1 0 Iron Ingot
+2 1 Flint
+1 Flower Pot
+3
+1 0 Brick
+1 2 Brick
+2 1 Brick
+1 Furnace
+8
+0 0 Cobblestone
+0 1 Cobblestone
+0 2 Cobblestone
+1 0 Cobblestone
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Cobblestone
+2 2 Cobblestone
+1 Glass Bottle
+3
+1 0 Glass
+1 2 Glass
+2 1 Glass
+1 Glass Pane
+6
+1 0 Glass
+1 1 Glass
+1 2 Glass
+2 0 Glass
+2 1 Glass
+2 2 Glass
+1 Glistering Melon
+2
+1 0 Melon
+1 1 Gold Nugget
+1 Gold Block
+9
+0 0 Gold Ingot
+0 1 Gold Ingot
+0 2 Gold Ingot
+1 0 Gold Ingot
+1 1 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 1 Gold Ingot
+2 2 Gold Ingot
+1 Gold Ingot
+9
+0 0 Gold Nugget
+0 1 Gold Nugget
+0 2 Gold Nugget
+1 0 Gold Nugget
+1 1 Gold Nugget
+1 2 Gold Nugget
+2 0 Gold Nugget
+2 1 Gold Nugget
+2 2 Gold Nugget
+1 Gold Nugget
+1
+1 1 Gold Ingot
+1 Golden Apple
+9
+0 0 Gold Block
+0 1 Gold Block
+0 2 Gold Block
+1 0 Gold Block
+1 1 Apple
+1 2 Gold Block
+2 0 Gold Block
+2 1 Gold Block
+2 2 Gold Block
+1 Golden Axe
+5
+0 0 Gold Ingot
+0 1 Gold Ingot
+1 0 Gold Ingot
+1 1 Stick
+2 1 Stick
+1 Golden Boots
+4
+1 0 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 2 Gold Ingot
+1 Golden Carrot
+9
+0 0 Gold Nugget
+0 1 Gold Nugget
+0 2 Gold Nugget
+1 0 Gold Nugget
+1 1 Carrot
+1 2 Gold Nugget
+2 0 Gold Nugget
+2 1 Gold Nugget
+2 2 Gold Nugget
+1 Golden Chestplate
+8
+0 0 Gold Ingot
+0 2 Gold Ingot
+1 0 Gold Ingot
+1 1 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 1 Gold Ingot
+2 2 Gold Ingot
+1 Golden Helmet
+5
+1 0 Gold Ingot
+1 1 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 2 Gold Ingot
+1 Golden Hoe
+4
+0 0 Gold Ingot
+0 1 Gold Ingot
+1 1 Stick
+2 1 Stick
+1 Golden Leggings
+7
+0 0 Gold Ingot
+0 1 Gold Ingot
+0 2 Gold Ingot
+1 0 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 2 Gold Ingot
+1 Golden Pickaxe
+5
+0 0 Gold Ingot
+0 1 Gold Ingot
+0 2 Gold Ingot
+1 1 Stick
+2 1 Stick
+1 Golden Shovel
+3
+0 1 Gold Ingot
+1 1 Stick
+2 1 Stick
+1 Golden Sword
+3
+0 1 Gold Ingot
+1 1 Gold Ingot
+2 1 Stick
+1 Gray Dye
+2
+2 0 Ink Sac
+2 1 Bone Meal
+1 Hopper
+6
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Chest
+1 2 Iron Ingot
+2 1 Iron Ingot
+1 Iron Axe
+5
+0 0 Iron Ingot
+0 1 Iron Ingot
+1 0 Iron Ingot
+1 1 Stick
+2 1 Stick
+1 Iron Bars
+6
+1 0 Iron Ingot
+1 1 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Iron Block
+9
+0 0 Iron Ingot
+0 1 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Iron Boots
+4
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 2 Iron Ingot
+1 Iron Chestplate
+8
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Iron Door
+6
+0 0 Iron Ingot
+0 1 Iron Ingot
+1 0 Iron Ingot
+1 1 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+1 Iron Helmet
+5
+1 0 Iron Ingot
+1 1 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 2 Iron Ingot
+1 Iron Hoe
+4
+0 0 Iron Ingot
+0 1 Iron Ingot
+1 1 Stick
+2 1 Stick
+1 Iron Leggings
+7
+0 0 Iron Ingot
+0 1 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 2 Iron Ingot
+1 Iron Pickaxe
+5
+0 0 Iron Ingot
+0 1 Iron Ingot
+0 2 Iron Ingot
+1 1 Stick
+2 1 Stick
+1 Iron Shovel
+3
+0 1 Iron Ingot
+1 1 Stick
+2 1 Stick
+1 Iron Sword
+3
+0 1 Iron Ingot
+1 1 Iron Ingot
+2 1 Stick
+1 Item Frame
+9
+0 0 Stick
+0 1 Stick
+0 2 Stick
+1 0 Stick
+1 1 Leather
+1 2 Stick
+2 0 Stick
+2 1 Stick
+2 2 Stick
+1 Jack o' Lantern
+2
+1 1 Pumpkin
+2 1 Torch
+1 Jukebox
+9
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Oak Wood Plank
+1 1 Diamond
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+4 Jungle Wood Plank
+1
+1 1 Jungle Wood
+1 Ladder
+7
+0 0 Stick
+0 2 Stick
+1 0 Stick
+1 1 Stick
+1 2 Stick
+2 0 Stick
+2 2 Stick
+1 Lapis Lazuli Block
+9
+0 0 Lapis Lazuli
+0 1 Lapis Lazuli
+0 2 Lapis Lazuli
+1 0 Lapis Lazuli
+1 1 Lapis Lazuli
+1 2 Lapis Lazuli
+2 0 Lapis Lazuli
+2 1 Lapis Lazuli
+2 2 Lapis Lazuli
+1 Leather Boots
+4
+1 0 Leather
+1 2 Leather
+2 0 Leather
+2 2 Leather
+1 Leather Helmet
+5
+1 0 Leather
+1 1 Leather
+1 2 Leather
+2 0 Leather
+2 2 Leather
+1 Leather Pants
+7
+0 0 Leather
+0 1 Leather
+0 2 Leather
+1 0 Leather
+1 2 Leather
+2 0 Leather
+2 2 Leather
+1 Leather Tunic
+8
+0 0 Leather
+0 2 Leather
+1 0 Leather
+1 1 Leather
+1 2 Leather
+2 0 Leather
+2 1 Leather
+2 2 Leather
+1 Lever
+2
+1 1 Stick
+2 1 Cobblestone
+1 Light Blue Dye
+2
+2 0 Lapis Lazuli
+2 1 Bone Meal
+3 Light Gray Dye
+3
+1 0 Bone Meal
+2 0 Ink Sac
+2 1 Bone Meal
+1 Light Gray Wool
+2
+2 0 White Wool
+2 1 Light Gray Dye
+1 Lime Dye
+2
+2 0 Cactus Green
+2 1 Bone Meal
+2 Magenta Dye
+4
+1 0 Pink Dye
+1 1 
+2 0 Purple Dye
+2 1 
+1 Magma Cream
+2
+1 1 Slimeball
+2 1 Blaze Powder
+1 Map
+9
+0 0 Paper
+0 1 Paper
+0 2 Paper
+1 0 Paper
+1 1 Compass
+1 2 Paper
+2 0 Paper
+2 1 Paper
+2 2 Paper
+1 Melon
+9
+0 0 Melon
+0 1 Melon
+0 2 Melon
+1 0 Melon
+1 1 Melon
+1 2 Melon
+2 0 Melon
+2 1 Melon
+2 2 Melon
+1 Melon Seeds
+1
+2 1 Melon
+1 Minecart
+5
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Minecart with Chest
+2
+1 1 Chest
+2 1 Minecart
+1 Minecart with Furnace
+2
+1 1 Furnace
+2 1 Minecart
+1 Minecart with Hopper
+2
+1 1 Hopper
+2 1 Minecart
+1 Minecart with TNT
+2
+1 1 TNT
+2 1 Minecart
+6 Mossy Cobblestone Wall
+6
+1 0 Moss Stone
+1 1 Moss Stone
+1 2 Moss Stone
+2 0 Moss Stone
+2 1 Moss Stone
+2 2 Moss Stone
+1 Mushroom Stew
+3
+1 0 Red Mushroom
+1 1 Brown Mushroom
+2 1 Bowl
+1 Nether Brick
+4
+1 0 Nether Brick
+1 1 Nether Brick
+2 0 Nether Brick
+2 1 Nether Brick
+6 Nether Brick Fence
+6
+1 0 Nether Brick
+1 1 Nether Brick
+1 2 Nether Brick
+2 0 Nether Brick
+2 1 Nether Brick
+2 2 Nether Brick
+1 Note Block
+9
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Oak Wood Plank
+1 1 Redstone
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+4 Oak Wood Plank
+1
+1 1 Oak Wood
+1 Orange Dye
+2
+2 0 Rose
+2 1 Dandelion Yellow
+1 Painting
+9
+0 0 Stick
+0 1 Stick
+0 2 Stick
+1 0 Stick
+1 1 White Wool
+1 2 Stick
+2 0 Stick
+2 1 Stick
+2 2 Stick
+1 Paper
+3
+2 0 Sugar Cane
+2 1 Sugar Cane
+2 2 Sugar Cane
+1 Pillar Quartz Block
+2
+1 1 Quartz Block
+2 1 Quartz Block
+1 Pink Dye
+2
+2 0 Rose
+2 1 Bone Meal
+1 Piston
+9
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Cobblestone
+1 1 Iron Ingot
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Redstone
+2 2 Cobblestone
+1 Powered Rail
+8
+0 0 Gold Ingot
+0 2 Gold Ingot
+1 0 Gold Ingot
+1 1 Stick
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 1 Redstone
+2 2 Gold Ingot
+1 Pumpkin Pie
+3
+1 0 Egg
+2 0 Sugar
+2 1 Pumpkin
+1 Pumpkin Seeds
+1
+2 1 Pumpkin
+1 Purple Dye
+2
+2 0 Lapis Lazuli
+2 1 Rose
+1 Quartz Block
+4
+1 0 Nether Quartz
+1 1 Nether Quartz
+2 0 Nether Quartz
+2 1 Nether Quartz
+1 Rail
+7
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Stick
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 2 Iron Ingot
+1 Redstone Block
+9
+0 0 Redstone
+0 1 Redstone
+0 2 Redstone
+1 0 Redstone
+1 1 Redstone
+1 2 Redstone
+2 0 Redstone
+2 1 Redstone
+2 2 Redstone
+1 Redstone Comparator
+7
+0 1 Redstone Torch
+1 0 Redstone Torch
+1 1 Nether Quartz
+1 2 Redstone Torch
+2 0 Stone
+2 1 Stone
+2 2 Stone
+1 Redstone Lamp
+5
+0 1 Redstone
+1 0 Redstone
+1 1 Glowstone
+1 2 Redstone
+2 1 Redstone
+1 Redstone Repeater
+6
+1 0 Redstone Torch
+1 1 Redstone
+1 2 Redstone Torch
+2 0 Stone
+2 1 Stone
+2 2 Stone
+1 Redstone Torch
+2
+1 1 Redstone
+2 1 Stick
+1 Rose
+1
+2 1 Rose
+1 Sandstone
+4
+1 0 Sand
+1 1 Sand
+2 0 Sand
+2 1 Sand
+1 Shears
+2
+1 1 Iron Ingot
+2 0 Iron Ingot
+1 Sign
+7
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Oak Wood Plank
+1 1 Oak Wood Plank
+1 2 Oak Wood Plank
+2 1 Stick
+1 Smooth Sandstone
+4
+1 0 Sandstone
+1 1 Sandstone
+2 0 Sandstone
+2 1 Sandstone
+1 Snow Block
+4
+1 0 Snowball
+1 1 Snowball
+2 0 Snowball
+2 1 Snowball
+4 Spruce Wood Plank
+1
+1 1 Spruce Wood
+1 Stick
+2
+1 1 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Sticky Piston
+2
+1 1 Slimeball
+2 1 Piston
+1 Stone Axe
+5
+0 0 Cobblestone
+0 1 Cobblestone
+1 0 Cobblestone
+1 1 Stick
+2 1 Stick
+1 Stone Brick
+4
+1 0 Stone
+1 1 Stone
+2 0 Stone
+2 1 Stone
+1 Stone Hoe
+4
+0 0 Cobblestone
+0 1 Cobblestone
+1 1 Stick
+2 1 Stick
+1 Stone Pickaxe
+5
+0 0 Cobblestone
+0 1 Cobblestone
+0 2 Cobblestone
+1 1 Stick
+2 1 Stick
+1 Stone Pressure Plate
+2
+2 0 Stone
+2 1 Stone
+1 Stone Shovel
+3
+0 1 Cobblestone
+1 1 Stick
+2 1 Stick
+1 Stone Sword
+3
+0 1 Cobblestone
+1 1 Cobblestone
+2 1 Stick
+1 Sugar
+1
+2 1 Sugar Cane
+1 TNT
+9
+0 0 Gunpowder
+0 1 Sand
+0 2 Gunpowder
+1 0 Sand
+1 1 Gunpowder
+1 2 Sand
+2 0 Gunpowder
+2 1 Sand
+2 2 Gunpowder
+1 Torch
+2
+1 1 Coal
+2 1 Stick
+1 Trapdoor
+6
+1 0 Oak Wood Plank
+1 1 Oak Wood Plank
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Trapped Chest
+2
+1 0 Tripwire Hook
+1 1 Chest
+1 Tripwire Hook
+3
+0 1 Iron Ingot
+1 1 Stick
+2 1 Oak Wood Plank
+1 Weighted Pressure Plate (Heavy)
+2
+2 0 Iron Ingot
+2 1 Iron Ingot
+1 Weighted Pressure Plate (Light)
+2
+2 0 Gold Ingot
+2 1 Gold Ingot
+1 White Wool
+4
+1 0 String
+1 1 String
+2 0 String
+2 1 String
+1 Wooden Axe
+5
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+1 0 Oak Wood Plank
+1 1 Stick
+2 1 Stick
+1 Wooden Door
+6
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+1 0 Oak Wood Plank
+1 1 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Wooden Hoe
+4
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+1 1 Stick
+2 1 Stick
+1 Wooden Pickaxe
+5
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 1 Stick
+2 1 Stick
+1 Wooden Pressure Plate
+2
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Wooden Shovel
+3
+0 1 Oak Wood Plank
+1 1 Stick
+2 1 Stick
+1 Wooden Sword
+3
+0 1 Oak Wood Plank
+1 1 Oak Wood Plank
+2 1 Stick

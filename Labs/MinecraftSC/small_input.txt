@@ -1,0 +1,330 @@
+47
+1 Activator Rail
+9
+0 0 Iron Ingot
+0 1 Stick
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Redstone Torch
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Stick
+2 2 Iron Ingot
+1 Anvil
+7
+0 0 Iron Block
+0 1 Iron Block
+0 2 Iron Block
+1 1 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Arrow
+3
+0 1 Flint
+1 1 Stick
+2 1 Feather
+1 Beacon
+9
+0 0 Glass
+0 1 Glass
+0 2 Glass
+1 0 Glass
+1 1 Nether Star
+1 2 Glass
+2 0 Obsidian
+2 1 Obsidian
+2 2 Obsidian
+1 Bed
+6
+1 0 White Wool
+1 1 White Wool
+1 2 White Wool
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+4 Birch Wood Plank
+1
+1 1 Birch Wood
+1 Blaze Powder
+1
+2 1 Blaze Rod
+1 Boat
+5
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Bone Meal
+1
+2 1 Bone
+1 Book
+4
+1 0 Paper
+1 1 Paper
+2 0 Paper
+2 1 Leather
+1 Book and Quill
+3
+1 0 Feather
+2 0 Ink Sac
+2 1 Book
+1 Bookshelf
+9
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Book
+1 1 Book
+1 2 Book
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Bow
+6
+0 1 Stick
+0 2 String
+1 0 Stick
+1 2 String
+2 1 Stick
+2 2 String
+1 Bowl
+3
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Bread
+3
+2 0 Wheat
+2 1 Wheat
+2 2 Wheat
+1 Brewing Stand
+4
+1 1 Blaze Rod
+2 0 Cobblestone
+2 1 Cobblestone
+2 2 Cobblestone
+1 Bricks
+4
+1 0 Brick
+1 1 Brick
+2 0 Brick
+2 1 Brick
+1 Bucket
+3
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 1 Iron Ingot
+1 Button
+1
+1 1 Oak Wood Plank
+1 Cake
+9
+0 0 Milk Bucket
+0 1 Milk Bucket
+0 2 Milk Bucket
+1 0 Sugar
+1 1 Egg
+1 2 Sugar
+2 0 Wheat
+2 1 Wheat
+2 2 Wheat
+1 Carrot on a Stick
+2
+1 0 Fishing Rod
+2 1 Carrot
+1 Cauldron
+7
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Iron Ingot
+2 2 Iron Ingot
+1 Chest
+8
+0 0 Oak Wood Plank
+0 1 Oak Wood Plank
+0 2 Oak Wood Plank
+1 0 Oak Wood Plank
+1 2 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+2 2 Oak Wood Plank
+1 Chiseled Quartz Block
+2
+1 1 Quartz Slab
+2 1 Quartz Slab
+1 Chiseled Sandstone
+2
+1 1 Sandstone Slab
+2 1 Sandstone Slab
+1 Clock
+5
+0 1 Gold Ingot
+1 0 Gold Ingot
+1 1 Redstone
+1 2 Gold Ingot
+2 1 Gold Ingot
+6 Cobblestone Wall
+6
+1 0 Cobblestone
+1 1 Cobblestone
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Cobblestone
+2 2 Cobblestone
+1 Compass
+5
+0 1 Iron Ingot
+1 0 Iron Ingot
+1 1 Redstone
+1 2 Iron Ingot
+2 1 Iron Ingot
+1 Cookie
+3
+2 0 Wheat
+2 1 Cocoa Beans
+2 2 Wheat
+1 Crafting Table
+4
+1 0 Oak Wood Plank
+1 1 Oak Wood Plank
+2 0 Oak Wood Plank
+2 1 Oak Wood Plank
+1 Cyan Dye
+2
+2 0 Lapis Lazuli
+2 1 Cactus Green
+1 Dandelion Yellow
+1
+2 1 Dandelion
+1 Daylight Sensor
+9
+0 0 Glass
+0 1 Glass
+0 2 Glass
+1 0 Nether Quartz
+1 1 Nether Quartz
+1 2 Nether Quartz
+2 0 Wooden Slab
+2 1 Wooden Slab
+2 2 Wooden Slab
+1 Detector Rail
+8
+0 0 Iron Ingot
+0 2 Iron Ingot
+1 0 Iron Ingot
+1 1 Stone Pressure Plate
+1 2 Iron Ingot
+2 0 Iron Ingot
+2 1 Redstone
+2 2 Iron Ingot
+1 Diamond Axe
+5
+0 0 Diamond
+0 1 Diamond
+1 0 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Block
+9
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 1 Diamond
+2 2 Diamond
+1 Diamond Boots
+4
+1 0 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Chestplate
+8
+0 0 Diamond
+0 2 Diamond
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 1 Diamond
+2 2 Diamond
+1 Diamond Helmet
+5
+1 0 Diamond
+1 1 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Hoe
+4
+0 0 Diamond
+0 1 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Leggings
+7
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 0 Diamond
+1 2 Diamond
+2 0 Diamond
+2 2 Diamond
+1 Diamond Pickaxe
+5
+0 0 Diamond
+0 1 Diamond
+0 2 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Shovel
+3
+0 1 Diamond
+1 1 Stick
+2 1 Stick
+1 Diamond Sword
+3
+0 1 Diamond
+1 1 Diamond
+2 1 Stick
+1 Dispenser
+9
+0 0 Cobblestone
+0 1 Cobblestone
+0 2 Cobblestone
+1 0 Cobblestone
+1 1 Bow
+1 2 Cobblestone
+2 0 Cobblestone
+2 1 Redstone
+2 2 Cobblestone
+1 Emerald Block
+9
+0 0 Emerald
+0 1 Emerald
+0 2 Emerald
+1 0 Emerald
+1 1 Emerald
+1 2 Emerald
+2 0 Emerald
+2 1 Emerald
+2 2 Emerald
+1 Gold Block
+9
+0 0 Gold Ingot
+0 1 Gold Ingot
+0 2 Gold Ingot
+1 0 Gold Ingot
+1 1 Gold Ingot
+1 2 Gold Ingot
+2 0 Gold Ingot
+2 1 Gold Ingot
+2 2 Gold Ingot
