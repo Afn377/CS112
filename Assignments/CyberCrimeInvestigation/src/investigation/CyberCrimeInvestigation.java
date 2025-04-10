@@ -43,6 +43,16 @@ public class CyberCrimeInvestigation {
      */
      public Hacker readSingleHacker(){ 
         // WRITE YOUR CODE HERE
+        String name = StdIn.readLine();
+        String ip = StdIn.readLine();
+        String location = StdIn.readLine();
+        String os = StdIn.readLine();
+        String webServer = StdIn.readLine();
+        String date = StdIn.readLine();
+        String urlHash = StdIn.readLine();
+        Hacker hacker = new Hacker(name);
+        Incident incident = new Incident(os, webServer, date, location, ip, urlHash);
+        hacker.addIncident(incident);
         
         return null; // Replace this line
     }
