@@ -54,7 +54,7 @@ public class CyberCrimeInvestigation {
         Incident incident = new Incident(os, webServer, date, location, ip, urlHash);
         hacker.addIncident(incident);
         
-        return null; // Replace this line
+        return hacker; 
     }
 
     /**
@@ -68,6 +68,29 @@ public class CyberCrimeInvestigation {
      */
     public void addHacker(Hacker toAdd) {
         // WRITE YOUR CODE HERE
+        int i = toAdd.hashCode() % hackerDirectory.length;
+        if(hackerDirectory[i] == null){
+            hackerDirectory[i] = new HNode(toAdd);
+            numHackers++;
+            if(numHackers >= hackerDirectory.length / 2){
+                resize();
+            }
+        } else{
+            HNode ptr = hackerDirectory[i];
+            HNode prev = null;
+            while(ptr != null){
+                if(ptr.getHacker().getName().equals(toAdd.getName())){
+                    ptr.getHacker().getIncidents().addAll(toAdd.getIncidents());
+                }
+                prev = ptr;
+                ptr = ptr.getNext();
+            }
+            prev.setNext(new HNode(toAdd));
+            numHackers++;
+            if(numHackers >= hackerDirectory.length / 2){
+                resize();
+            }
+        }
 
     }
 
