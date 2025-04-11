@@ -66,7 +66,26 @@ public class MinecraftLP {
      */
     public void delete(String name, int count) {
         // WRITE YOUR CODE HERE
-        
+        int i = Math.abs(name.hashCode()) % st.length;
+        while(true){
+            if(st[i] == null){
+                break;
+            }else if(st[i].getName().equals(name)){
+                if(st[i].getCount() > count){
+                    st[i].setCount(st[i].getCount() - count);
+                }else if(st[i].getCount() == count){
+                    st[i] = null;
+                    slotsFilled--;
+                    rehash((i+1) % st.length);
+                    if(st.length > 9 && loadFactor() <= 0.25){
+                        resize((int) st.length / 2);
+                    }
+                }
+                break;
+            }else{
+                i = (i + 1) % st.length;
+            }
+        }
     }
 
     /**
