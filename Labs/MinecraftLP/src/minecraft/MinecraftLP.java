@@ -44,6 +44,9 @@ public class MinecraftLP {
             if(st[i] == null){
                 st[i] = new Item(name, count);
                 slotsFilled++;
+                if(loadFactor() >= 0.5){
+                    resize(st.length * 2);
+                }
                 break;
             }else if(st[i].getName().equals(name)){
                 st[i].setCount(st[i].getCount() + count);
@@ -63,6 +66,7 @@ public class MinecraftLP {
      */
     public void delete(String name, int count) {
         // WRITE YOUR CODE HERE
+        
     }
 
     /**
