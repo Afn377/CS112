@@ -39,6 +39,19 @@ public class MinecraftLP {
      */
     public void put(String name, int count) {
         // WRITE YOUR CODE HERE
+        int i = Math.abs(name.hashCode()) % st.length;
+        while(true){
+            if(st[i] == null){
+                st[i] = new Item(name, count);
+                slotsFilled++;
+                break;
+            }else if(st[i].getName().equals(name)){
+                st[i].setCount(st[i].getCount() + count);
+                break;
+            }else{
+                i = (i + 1) % st.length;
+            }
+        }
     }
 
     /**
