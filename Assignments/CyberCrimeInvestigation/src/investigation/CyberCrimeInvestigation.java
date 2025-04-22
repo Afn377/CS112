@@ -99,7 +99,16 @@ public class CyberCrimeInvestigation {
      * into the new doubled directory.
      */
     private void resize() {
-        // WRITE YOUR CODE HERE 
+        // WRITE YOUR CODE HERE
+        HNode[] temp = hackerDirectory;
+        numHackers = 0;
+        hackerDirectory = new HNode[temp.length * 2];
+        for(int i = 0; i < temp.length; i++){
+            if(temp[i] != null){
+                addHacker(temp[i].getHacker());
+                StdOut.println("here");
+            }
+        }
         
     }
 
