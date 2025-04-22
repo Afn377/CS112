@@ -120,7 +120,25 @@ public class CyberCrimeInvestigation {
      * @return The hacker object if found, null otherwise.
      */
     public Hacker search(String toSearch) {
-        // WRITE YOUR CODE HERE 
+        // WRITE YOUR CODE HERE
+        int i = Math.abs(toSearch.hashCode()) % hackerDirectory.length;
+        
+        HNode ptr = hackerDirectory[i];
+        while(ptr != null){
+            
+            if(ptr.getHacker().getName().equals(toSearch))
+                return ptr.getHacker();
+
+            ArrayList<String> aliases = ptr.getHacker().getAliases();
+            
+            for(int j = 0; j < aliases.size(); j++){
+                if(aliases.get(j).equals(toSearch))
+                    return ptr.getHacker();
+            }
+
+            ptr = ptr.getNext();
+
+        }
 
         return null;
     }
@@ -134,6 +152,7 @@ public class CyberCrimeInvestigation {
      */
     public Hacker remove(String toRemove) {
         // WRITE YOUR CODE HERE 
+
 
         return null;
     } 
