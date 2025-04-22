@@ -250,8 +250,25 @@ public class CyberCrimeInvestigation {
      */
     public ArrayList<Hacker> getHackersByLocation(String location) {
         // WRITE YOUR CODE HERE 
-
-        return null; // Replace this line
+        ArrayList<Hacker> result = new ArrayList<Hacker>();
+        for(int i = 0; i < hackerDirectory.length; i++){
+            if(hackerDirectory[i] != null){
+                HNode ptr = hackerDirectory[i];
+                while(ptr != null){
+                    Hacker hacker = ptr.getHacker();
+                    ArrayList<Incident> incidents = hacker.getIncidents();
+                    for(int j = 0; j < hacker.numIncidents(); j++){
+                        if(incidents.get(j).getLocation().equals(location)){
+                            result.add(hacker);
+                            break;
+                        }
+                    }
+                    ptr = ptr.getNext();
+                }
+                
+            }
+        }
+        return result;
     }
   
 
