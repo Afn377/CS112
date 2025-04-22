@@ -69,9 +69,6 @@ public class CyberCrimeInvestigation {
      */
     public void addHacker(Hacker toAdd) {
         // WRITE YOUR CODE HERE
-        if(toAdd.getName().equals("Hacker3996")){
-            StdOut.println("hacker");
-        }
         int i = toAdd.hashCode() % hackerDirectory.length;
         if(hackerDirectory[i] == null){
             hackerDirectory[i] = new HNode(toAdd);
@@ -137,6 +134,7 @@ public class CyberCrimeInvestigation {
 
             if(ptr.getHacker().getName().equals(toSearch))
                 return ptr.getHacker();
+            ptr = ptr.getNext();
 
         }
 
@@ -151,17 +149,11 @@ public class CyberCrimeInvestigation {
      * @return The removed hacker object, or null if not found.
      */
     public Hacker remove(String toRemove) {
-        // WRITE YOUR CODE HERE 
+        // WRITE YOUR CODE HERE
         int i = Math.abs(toRemove.hashCode()) % hackerDirectory.length;
         HNode prev = null;
         HNode ptr = hackerDirectory[i];
         if(ptr.getHacker().getName().equals(toRemove)){
-            HNode ptr1 = ptr;
-            while(ptr1 != null){
-                StdOut.println(ptr1);
-                ptr1 = ptr1.getNext();
-            }
-
             hackerDirectory[i] = ptr.getNext();
             numHackers--;
             return ptr.getHacker();
