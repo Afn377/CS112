@@ -69,6 +69,9 @@ public class CyberCrimeInvestigation {
      */
     public void addHacker(Hacker toAdd) {
         // WRITE YOUR CODE HERE
+        if(toAdd.getName().equals("Hacker3996")){
+            StdOut.println("hacker");
+        }
         int i = toAdd.hashCode() % hackerDirectory.length;
         if(hackerDirectory[i] == null){
             hackerDirectory[i] = new HNode(toAdd);
@@ -107,7 +110,12 @@ public class CyberCrimeInvestigation {
         hackerDirectory = new HNode[temp.length * 2];
         for(int i = 0; i < temp.length; i++){
             if(temp[i] != null){
-                addHacker(temp[i].getHacker());
+                HNode ptr = temp[i];
+                while(ptr != null){
+                    addHacker(ptr.getHacker());
+                    ptr = ptr.getNext();
+                    numHackers++;
+                }
             }
         }
         
@@ -215,8 +223,20 @@ public class CyberCrimeInvestigation {
      */
     public ArrayList<Hacker> getNMostWanted(int n) {
         // WRITE YOUR CODE HERE 
-
-        return null; // Replace this line
+        MaxPQ<Hacker> pq = new MaxPQ<Hacker>();
+        for(int i = 0; i < hackerDirectory.length; i++){
+            HNode ptr = hackerDirectory[i];
+            while(ptr != null){
+                pq.insert(ptr.getHacker());
+                ptr = ptr.getNext();
+            }
+        }
+        
+        ArrayList<Hacker> result = new ArrayList<Hacker>();
+        for(int i = 0; i < n; i ++){
+            result.add(pq.delMax());
+        }
+        return result;
     }
 
     /**
