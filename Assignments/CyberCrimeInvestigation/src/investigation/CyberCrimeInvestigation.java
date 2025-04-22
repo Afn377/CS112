@@ -1,5 +1,6 @@
 package investigation;
 
+import java.nio.file.FileAlreadyExistsException;
 import java.util.ArrayList; 
 
 /*  
@@ -81,6 +82,7 @@ public class CyberCrimeInvestigation {
             while(ptr != null){
                 if(ptr.getHacker().getName().equals(toAdd.getName())){
                     ptr.getHacker().getIncidents().addAll(toAdd.getIncidents());
+                    return;
                 }
                 prev = ptr;
                 ptr = ptr.getNext();
@@ -106,7 +108,6 @@ public class CyberCrimeInvestigation {
         for(int i = 0; i < temp.length; i++){
             if(temp[i] != null){
                 addHacker(temp[i].getHacker());
-                StdOut.println("here");
             }
         }
         
@@ -125,18 +126,9 @@ public class CyberCrimeInvestigation {
         
         HNode ptr = hackerDirectory[i];
         while(ptr != null){
-            
+
             if(ptr.getHacker().getName().equals(toSearch))
                 return ptr.getHacker();
-
-            ArrayList<String> aliases = ptr.getHacker().getAliases();
-            
-            for(int j = 0; j < aliases.size(); j++){
-                if(aliases.get(j).equals(toSearch))
-                    return ptr.getHacker();
-            }
-
-            ptr = ptr.getNext();
 
         }
 
@@ -152,8 +144,34 @@ public class CyberCrimeInvestigation {
      */
     public Hacker remove(String toRemove) {
         // WRITE YOUR CODE HERE 
+        int i = Math.abs(toRemove.hashCode()) % hackerDirectory.length;
+        HNode prev = null;
+        HNode ptr = hackerDirectory[i];
+        if(ptr.getHacker().getName().equals(toRemove)){
+            HNode ptr1 = ptr;
+            while(ptr1 != null){
+                StdOut.println(ptr1);
+                ptr1 = ptr1.getNext();
+            }
 
+            hackerDirectory[i] = ptr.getNext();
+            numHackers--;
+            return ptr.getHacker();
+        }
+        prev = ptr;
+        ptr = ptr.getNext();
 
+        while(ptr != null){
+            
+            if(ptr.getHacker().getName().equals(toRemove)){
+                prev.setNext(ptr.getNext());
+                numHackers--;
+                return ptr.getHacker();
+            }
+
+            prev = ptr;
+            ptr = ptr.getNext();
+        }
         return null;
     } 
 
@@ -166,8 +184,23 @@ public class CyberCrimeInvestigation {
      */
     public boolean mergeHackers(String hacker1, String hacker2) {  
         // WRITE YOUR CODE HERE 
+        Hacker h1 = search(hacker1);
+        Hacker h2 = search(hacker2);
+        if(h1 == null || h2 == null)
+            return false;
+        
+        if(h2.numIncidents() > h1.numIncidents()){
+            h2.getIncidents().addAll(h1.getIncidents());
+            h2.addAlias(h1.getName());
+            remove(hacker1);
+            return true;
+        } else{
+            h1.getIncidents().addAll(h2.getIncidents());
+            h1.addAlias(h2.getName());
+            remove(hacker2);
+            return true;
+        }
 
-        return false; // Replace this line
     }
 
     /**
