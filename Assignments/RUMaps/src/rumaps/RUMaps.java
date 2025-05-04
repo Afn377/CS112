@@ -332,8 +332,8 @@ public class RUMaps {
             Intersection current = path.get(i);
             Intersection next = path.get(i + 1);
     
-            int i = rutgers.findIntersection(current.getCoordinate());
-            Block block = rutgers.getAdjacencyList()[i];
+            int index = rutgers.findIntersection(current.getCoordinate());
+            Block block = rutgers.getAdjacencyList()[index];
     
             while (block != null) {
                 if (block.getLastEndpoint().equals(next)) {
