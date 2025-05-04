@@ -267,7 +267,7 @@ public class RUMaps {
         ArrayList<Intersection> path = new ArrayList<>();
         Intersection[] pred = new Intersection[rutgers.getIntersections().length];
         double[] d = new double[rutgers.getIntersections().length];
-        PriorityQueue<Intersection> pq = new PriorityQueue<>(Comparator.comparingDouble(i -> d[rutgers.findIntersection(i.getCoordinate())]));
+        PriorityQueue<Intersection> fringe = new PriorityQueue<>(Comparator.comparingDouble(i -> d[rutgers.findIntersection(i.getCoordinate())]));
     
         // Initialize distances and predecessors
         for (int i = 0; i < d.length; i++) {
@@ -275,10 +275,10 @@ public class RUMaps {
             pred[i] = null;
         }
         d[rutgers.findIntersection(start.getCoordinate())] = 0;
-        pq.add(start);
+        fringe.add(start);
     
-        while (!pq.isEmpty()) {
-            Intersection current = pq.poll();
+        while (!fringe.isEmpty()) {
+            Intersection current = fringe.poll();
             int currentIndex = rutgers.findIntersection(current.getCoordinate());
     
             // If we reached the destination, stop
@@ -291,26 +291,22 @@ public class RUMaps {
                 Intersection neighbor = block.getLastEndpoint();
                 int neighborIndex = rutgers.findIntersection(neighbor.getCoordinate());
     
-                // Relaxation step
                 double newDist = d[currentIndex] + blockTraffic(block);
                 if (newDist < d[neighborIndex]) {
                     d[neighborIndex] = newDist;
                     pred[neighborIndex] = current;
     
-                    // Add or update the neighbor in the priority queue
-                    pq.remove(neighbor); // Remove if it already exists
-                    pq.add(neighbor);
+                    fringe.remove(neighbor); 
+                    fringe.add(neighbor);
                 }
                 block = block.getNext();
             }
         }
     
-        // If the end intersection is unreachable, return an empty path
         if (d[rutgers.findIntersection(end.getCoordinate())] == Double.POSITIVE_INFINITY) {
             return new ArrayList<>();
         }
     
-        // Reconstruct the path from end to start using the predecessor array
         Intersection current = end;
         while (current != null) {
             path.add(current);
