@@ -264,12 +264,12 @@ public class RUMaps {
      * @return The path with the least traffic, or an empty ArrayList if no path exists
      */
     public ArrayList<Intersection> fastestPath(Intersection start, Intersection end) {
+        // WRITE YOUR CODE HERE
         ArrayList<Intersection> path = new ArrayList<>();
         Intersection[] pred = new Intersection[rutgers.getIntersections().length];
         double[] d = new double[rutgers.getIntersections().length];
         PriorityQueue<Intersection> fringe = new PriorityQueue<>(Comparator.comparingDouble(i -> d[rutgers.findIntersection(i.getCoordinate())]));
-    
-        // Initialize distances and predecessors
+
         for (int i = 0; i < d.length; i++) {
             d[i] = Double.POSITIVE_INFINITY;
             pred[i] = null;
@@ -279,19 +279,18 @@ public class RUMaps {
     
         while (!fringe.isEmpty()) {
             Intersection current = fringe.poll();
-            int currentIndex = rutgers.findIntersection(current.getCoordinate());
+            int i = rutgers.findIntersection(current.getCoordinate());
     
-            // If we reached the destination, stop
             if (current.equals(end)) {
                 break;
             }
     
-            Block block = rutgers.getAdjacencyList()[currentIndex];
+            Block block = rutgers.getAdjacencyList()[i];
             while (block != null) {
                 Intersection neighbor = block.getLastEndpoint();
                 int neighborIndex = rutgers.findIntersection(neighbor.getCoordinate());
     
-                double newDist = d[currentIndex] + blockTraffic(block);
+                double newDist = d[i] + blockTraffic(block);
                 if (newDist < d[neighborIndex]) {
                     d[neighborIndex] = newDist;
                     pred[neighborIndex] = current;
@@ -326,9 +325,29 @@ public class RUMaps {
      * @return A double array containing the total length, average experienced traffic factor, and total traffic of the path (in that order)
      */
     public double[] pathInformation(ArrayList<Intersection> path) {
-        // WRITE YOUR CODE HERE
-        
-        return new double[] {0, 0, 0}; // Replace this line, it is provided so the code compiles
+        double totalLength = 0;
+        double totalTraffic = 0;
+    
+        for (int i = 0; i < path.size() - 1; i++) {
+            Intersection current = path.get(i);
+            Intersection next = path.get(i + 1);
+    
+            int currentIndex = rutgers.findIntersection(current.getCoordinate());
+            Block block = rutgers.getAdjacencyList()[currentIndex];
+    
+            while (block != null) {
+                if (block.getLastEndpoint().equals(next)) {
+                    totalLength += blockLength(block);
+                    totalTraffic += blockTraffic(block);
+                    break;
+                }
+                block = block.getNext();
+            }
+        }
+    
+        double averageTrafficFactor = totalLength > 0 ? totalTraffic / totalLength : 0;
+    
+        return new double[]{totalLength, averageTrafficFactor, totalTraffic};
     }
 
     /**
