@@ -215,8 +215,40 @@ public class RUMaps {
      */
     public ArrayList<Intersection> minimizeIntersections(Intersection start, Intersection end) {
         // WRITE YOUR CODE HERE
+        ArrayList<Intersection> path = new ArrayList<>();
+        Intersection[] edgeTo = new Intersection[rutgers.getIntersections().length];
+        boolean[] visited = new boolean[rutgers.getIntersections().length];
+        Queue<Intersection> queue = new Queue<>();
+        queue.enqueue(start);
+        visited[rutgers.findIntersection(start.getCoordinate())] = true;
+        while (!queue.isEmpty()) {
+            Intersection current = queue.dequeue();
+            if (current.equals(end)) {
+                break;
+            }
+            int index = rutgers.findIntersection(current.getCoordinate());
+            Block block = rutgers.getAdjacencyList()[index];
+            while (block != null) {
+                Intersection next = block.getLastEndpoint();
+                if (!visited[rutgers.findIntersection(next.getCoordinate())]) {
+                    visited[rutgers.findIntersection(next.getCoordinate())] = true;
+                    edgeTo[rutgers.findIntersection(next.getCoordinate())] = current;
+                    queue.enqueue(next);
+                }
+                block = block.getNext();
+            }
+        }
+        if (!visited[rutgers.findIntersection(end.getCoordinate())]) {
+            return new ArrayList<>();
+        }
+        Intersection current = end;
+        while (current != null) {
+            path.add(current);
+            current = edgeTo[rutgers.findIntersection(current.getCoordinate())];
+        }
 
-        return null; // Replace this line, it is provided so the code compiles
+        Collections.reverse(path);
+        return path;
     }
 
     /**
@@ -234,7 +266,7 @@ public class RUMaps {
     public ArrayList<Intersection> fastestPath(Intersection start, Intersection end) {
         // WRITE YOUR CODE HERE
         
-        return null; // Replace this line, it is provided so the code compiles
+        return new ArrayList<>(); // Replace this line, it is provided so the code compiles
     }
 
     /**
